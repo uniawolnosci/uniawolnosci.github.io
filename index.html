@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+
+<meta charset="utf-8">
+<meta name="theme-color" content="#00647d">
+<meta name="description" content="Unia Wolnosci">
+<meta name="author" content="Mateusz Słotwiński">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+<title>Unia Wolności</title>	
+<link rel="shortcut icon" type="x-icon" href="img/icon.png">	
+<link rel="canonical" href="https://soulgraphy.me">
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<link href='main.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body onload="slogan()">
+<main class="index">
+<article><h1>Unia Wolności</h1><h2 id="slogan"></h2>
+<a class="indexmenu" href="program.html">Zaczynajmy!
+</a></article>
+
+
+
+</main>
+
+<script language="javascript" type="text/javascript">
+
+var literkislogan = ["Z","a","s","ł","u","g","u","j","e","m","y ","n","a ","w","o","l","n","o","ś","ć","!"]
+var x = 0
+	
+function slogan () {
+	if (x < 21) {
+	document.getElementById("slogan").innerHTML += literkislogan[x];
+	x = x + 1;
+	setTimeout("slogan()", 100); }
+	else {
+		$(".indexmenu").css("opacity",1);	
+	}
+}
+
+</script>
+
+</body>
+</html>

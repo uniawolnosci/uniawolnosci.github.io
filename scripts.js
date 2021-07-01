@@ -1,28 +1,3 @@
-
-var literkislogan = ["a","s","ł","u","g","u","j","e","m","y ","n","a ","w","o","l","n","o","ś","ć","!"]
-var x = 0
-
-function slogan () {
-	if (x < 20) {
-	document.getElementById("slogan").innerHTML += literkislogan[x];
-	x = x + 1;
-	setTimeout("slogan()", 100); }
-	else {
-		$(".indexmenu").css("opacity",1);	
-	}
-}
-	
-function sloganwait () {
-	setTimeout("slogan()", 1000); }	
-	
-$(document).ready(function() {
- 
-    setTimeout(function(){
-        $('body').addClass('loaded');
-    }, 500);
- 
-});
-
 function ocenki () {
 	$(".ocena span:first-child").append("<img src='img/ocena1.png'/>");	
 	$(".ocena span:nth-child(2)").append("<img src='img/ocena2.png'/>");	

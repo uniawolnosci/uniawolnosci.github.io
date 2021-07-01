@@ -1,0 +1,50 @@
+
+var literkislogan = ["a","s","ł","u","g","u","j","e","m","y ","n","a ","w","o","l","n","o","ś","ć","!"]
+var x = 0
+
+function slogan () {
+	if (x < 20) {
+	document.getElementById("slogan").innerHTML += literkislogan[x];
+	x = x + 1;
+	setTimeout("slogan()", 100); }
+	else {
+		$(".indexmenu").css("opacity",1);	
+	}
+}
+	
+function sloganwait () {
+	setTimeout("slogan()", 1000); }	
+	
+$(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 500);
+ 
+});
+
+function ocenki () {
+	$(".ocena span:first-child").append("<img src='img/ocena1.png'/>");	
+	$(".ocena span:nth-child(2)").append("<img src='img/ocena2.png'/>");	
+	$(".ocena span:nth-child(3)").append("<img src='img/ocena3.png'/>");	
+	$(".ocena span:last-child").append("<img src='img/ocena4.png'/>");	
+	$(".ocena5").css("color","#00647d");	
+	$(".ocena4").css("color","#008000");	
+	$(".ocena3").css("color","#6D9900");	
+	$(".ocena2").css("color","#C69100");	
+	$(".ocena1").css("color","#C10000");	
+	$(".ocena5").append("5/5");	
+	$(".ocena4").append("4/5");	
+	$(".ocena3").append("3/5");	
+	$(".ocena2").append("2/5");	
+	$(".ocena1").append("1/5");	
+
+}
+
+ocenki ()
+
+function spistresci () {
+	$("main").append("<article class='spistresci'> Spis Treści<section class='spis'> <ul> <li>Wstęp i deklaracja</li><ul> <li><a href='program.html'>Wprowadzenie</a></li> <li><a href='idea.html'>Deklaracja ideowa</a></li> <li><a href='wzorce.html'>Wzorce na świecie</a></li>  </ul><li>Gospodarka i polityka społeczna</li><ul> <li>Proste prawo</li> <li>Państwo dobrobytu</li> <li>Raj biznesowy</li> <li>Rynek światowy</li> <li>Transport</li> <li>Środowisko i energetyka</li> <li>Pomoc społeczna i sprawy socjalne</li>  </ul><li>Wolność człowieka</li><ul> <li>Wolność słowa</li> <li>Narkotyki</li> <li>Samoobrona</li> <li>Świeckie państwo</li> <li>LGBT i kwestie równouprawnienia</li> <li>Pozostałe</li>  </ul><li>Naród i społeczeństwo</li><ul> <li>Oświata </li> <li>Medycyna</li> <li>Patriotyzm</li> <li>Bezpieczeństwo </li> <li>Armia</li> <li>Dyplomacja</li> <li>Unia Europejska</li>  </ul><li>Ustrój rzeczypospolitej</li><ul> <li>Sądy</li> <li>Praworządność</li> <li>Parlament</li> <li>Samorządy</li> <li>Administracja</li> <li>Ministerstwa</li>  </ul><li>Zakończenie</li><ul> <li>O autorze</li></ul> </ul> </section></article>");	
+}
+
+spistresci ()

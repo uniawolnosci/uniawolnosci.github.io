@@ -103,12 +103,14 @@ button:focus, input:focus, select:focus, textarea:focus{
 	color:#e3e3e3;
 	border-radius:10px;
 	transition: 0.2s all;
-	opacity:0;
 }
 
 .indexmenu:hover {
 	transform:scale(1.1);
 }
+
+
+
 
 .program {
 	background-color:#c4cbcd;
@@ -118,17 +120,26 @@ button:focus, input:focus, select:focus, textarea:focus{
 	background-image:url(img/index.png);
 	background-size:cover;
 	background-position:center;	
-
+	display:block;
+	position:fixed;
+	overflow-y:scroll;
 }
 
-.basicinfo {
+.basicinfo, .spistresci, .paragraf {
 	font-size:calc(13px + 1.3vw);
 	font-weight:bold;
-	text-align:center;
 	text-transform:uppercase;	
+	text-align:center;
+	background-color:#c4cbcde2;
+	display:block;
+	padding:20px;
+	max-width:1300px;
+	margin:auto;
+	border-radius:20px;
+	
 }
 
-.program section {
+.program section, .paragraf section {
 	font-size:calc(7px + 0.7vw);
 	font-weight:normal;
 	text-transform:none;
@@ -141,6 +152,106 @@ button:focus, input:focus, select:focus, textarea:focus{
 	text-transform:uppercase;
 	
 }
+
+.spistresci {
+	margin-top:10vh;
+}
+
+ul {
+	text-align:left;
+}
+
+.spis > ul > li{
+	font-weight: bold;
+	margin-top:20px;
+	text-transform:uppercase;
+	font-size:calc(8.5px + 0.85vw);
+	list-style-type: none;
+}
+
+.spis > ul ul {
+	list-style-type: none !important;
+}
+
+.spis a:hover {
+	color:#00647d;
+}
+
+.deklaracja {
+	text-align:left;
+}
+
+.deklaracja li {
+	margin:10px
+}
+
+.wzorce b {
+	color:#00647d;
+	text-transform:uppercase;	
+	font-size:calc(12px + 1.2vw);
+	display:block;
+	margin-bottom:10px;
+	text-align:center;
+	display:block;
+}
+
+.wzorce img {
+	width:95%;
+	max-width:800px;
+	margin:3% auto 0 auto;
+	border-radius:10px;
+	display:block;
+}
+
+.wzorce section {
+	margin:40px calc(4vw - 20px);
+	border: 3px solid #00647d;
+	padding:3vh 5vw;
+	border-radius:10px;
+	text-align:justify;
+}
+
+.wzorce section:first-child {
+	margin-top:20px;
+}
+
+.ocena {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-weight:bold;
+	font-size:calc(8.5px + 0.85vw);
+	margin:2vh 1vw;
+	text-align:center;
+}
+
+.ocena img {
+	width:calc(40px + 4vw);
+}
+
+.ocena span {
+	margin:0 1vw;
+}
+
+.wzorce .podpis {
+	display:block;
+	text-align:center;
+	font-style: italic;
+	font-size:calc(5.8px + 0.58vw);	
+	margin:1% 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 #loader-wrapper {
     position: fixed;

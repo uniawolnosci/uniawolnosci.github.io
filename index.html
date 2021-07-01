@@ -12,38 +12,49 @@
 <link rel="shortcut icon" type="x-icon" href="img/icon.png">	
 <link rel="canonical" href="https://soulgraphy.me">
 
+
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 <link href='main.css' rel='stylesheet' type='text/css'>
 
 </head>
+<body onload="sloganwait()">
 
-<body onload="slogan()">
+<div id="loader-wrapper"><div id="loader"></div><div class="loader-section section-left"></div><div class="loader-section section-right"></div></div>
+
 <main class="index">
-<article><h1>Unia Wolności</h1><h2 id="slogan"></h2>
+
+<article><h1>Unia Wolności</h1><h2 id="slogan">Z</h2>
 <a class="indexmenu" href="program.html">Zaczynajmy!
 </a></article>
 
-
-
 </main>
 
-<script language="javascript" type="text/javascript">
-
-var literkislogan = ["Z","a","s","ł","u","g","u","j","e","m","y ","n","a ","w","o","l","n","o","ś","ć","!"]
+<script>
+var literkislogan = ["a","s","ł","u","g","u","j","e","m","y ","n","a ","w","o","l","n","o","ś","ć","!"]
 var x = 0
-	
+
 function slogan () {
-	if (x < 21) {
+	if (x < 20) {
 	document.getElementById("slogan").innerHTML += literkislogan[x];
 	x = x + 1;
-	setTimeout("slogan()", 100); }
+	setTimeout("slogan()", 80); }
 	else {
 		$(".indexmenu").css("opacity",1);	
 	}
 }
+	
+function sloganwait () {
+	setTimeout("slogan()", 1000); }	
+	
+$(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 500);
+ 
+});
 
 </script>
-
 </body>
 </html>

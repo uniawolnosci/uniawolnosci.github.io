@@ -1,3 +1,11 @@
+$(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 500);
+ 
+});
+
 function ocenki () {
 	$(".ocena span:first-child").append("<img src='img/ocena1.png'/>");	
 	$(".ocena span:nth-child(2)").append("<img src='img/ocena2.png'/>");	

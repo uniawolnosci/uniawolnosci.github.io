@@ -7,10 +7,10 @@ $(document).ready(function() {
 });
 
 function ocenki () {
-	$(".ocena span:first-child").append("<img src='img/ocena1.png'/>");	
-	$(".ocena span:nth-child(2)").append("<img src='img/ocena2.png'/>");	
-	$(".ocena span:nth-child(3)").append("<img src='img/ocena3.png'/>");	
-	$(".ocena span:last-child").append("<img src='img/ocena4.png'/>");	
+	$(".ocena span:first-child").append("<img src='img/ocena1.png'> <header class='opis opiswzorce1'>Wydajna gospodarka</header>");	
+	$(".ocena span:nth-child(2)").append("<img src='img/ocena2.png'/> <header class='opis opiswzorce2'>Wolni ludzie</header>");	
+	$(".ocena span:nth-child(3)").append("<img src='img/ocena3.png'/> <header class='opis opiswzorce3'>Przyjazne państwo</header>");	
+	$(".ocena span:last-child").append("<img src='img/ocena4.png'/> <header class='opis opiswzorce4'>Sprawna organizacja</header>");	
 	$(".ocena5").css("color","#00647d");	
 	$(".ocena4").css("color","#008000");	
 	$(".ocena3").css("color","#6D9900");	
@@ -23,6 +23,34 @@ function ocenki () {
 	$(".ocena1").append("1/5");	
 
 }
+
+$(".ocena span:first-child").hover(function(){
+  $(".opiswzorce1").css("opacity", "1");
+  }, function(){
+  $(".opiswzorce1").css("opacity", "0");
+});
+
+$(".ocena span:nth-child(2)").hover(function(){
+  $(".opiswzorce2").css("opacity", "1");
+  }, function(){
+  $(".opiswzorce2").css("opacity", "0");
+});
+
+$(".ocena span:nth-child(3)").hover(function(){
+  $(".opiswzorce3").css("opacity", "1");
+  }, function(){
+  $(".opiswzorce3").css("opacity", "0");
+});
+
+$(".ocena span:last-child").hover(function(){
+  $(".opiswzorce4").css("opacity", "1");
+  }, function(){
+  $(".opiswzorce4").css("opacity", "0");
+});
+
+
+
+
 
 ocenki ()
 

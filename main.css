@@ -203,7 +203,7 @@ ul {
 	display:block;
 }
 
-.wzorce section {
+.wzorce section, .podrozdzial {
 	margin:40px calc(4vw - 20px);
 	border: 3px solid #00647d;
 	padding:3vh 5vw;
@@ -227,12 +227,13 @@ ul {
 
 .ocena img {
 	width:calc(40px + 4vw);
+	cursor:pointer;
 }
 
 .ocena .opis {
 	position:absolute;
 	bottom:0;
-	left:0;
+	left:50%;
 	padding:10%;
 	border-radius:10px;
 	background-color:#00647d;
@@ -243,23 +244,25 @@ ul {
 	transition:0.1s all;
 	z-index:1;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+	transform:translateX(-50%);
 }
 
 .ocena span {
 	margin:0 1vw;
 }
 
-
-
-
-
-.wzorce .podpis {
+.podpis {
 	display:block;
 	text-align:center;
 	font-style: italic;
 	font-size:calc(5.8px + 0.58vw);	
 	margin:1% 0;
+}
+
+.paragraf h3 {
+	font-size:calc(11px + 1.1vw);
+	text-transform:uppercase;
+	text-align:center;
 }
 
 

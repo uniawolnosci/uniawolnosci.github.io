@@ -126,7 +126,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 
 .basicinfo, .spistresci, .paragraf {
-	font-size:calc(13px + 1.3vw);
+	font-size:calc(14px + 1.4vw);
 	font-weight:bold;
 	text-transform:uppercase;	
 	text-align:center;
@@ -195,7 +195,7 @@ ul {
 	display:block;
 }
 
-.wzorce img {
+.wzorce img, .podrozdzial img {
 	width:95%;
 	max-width:800px;
 	margin:3% auto 0 auto;
@@ -203,7 +203,7 @@ ul {
 	display:block;
 }
 
-.wzorce section, .podrozdzial {
+.wzorce section {
 	margin:40px calc(4vw - 20px);
 	border: 3px solid #00647d;
 	padding:3vh 5vw;
@@ -262,11 +262,23 @@ ul {
 .paragraf h3 {
 	font-size:calc(11px + 1.1vw);
 	text-transform:uppercase;
-	text-align:center;
+	justify-content:center;
+	color:#00647d;
+	display:flex;
+	align-items:center;
 }
 
+.paragraf h3:before, .paragraf h3:after {
+	content:'';
+	border:1px solid #00647d;
+	flex-grow:1;
+	margin:0 1vw;
+}
 
-
+.podrozdzial {
+	text-align:justify;
+	padding:3vh 3vw;
+}
 
 
 

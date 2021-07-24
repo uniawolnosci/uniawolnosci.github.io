@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
-
 *,*:before,*:after {
 	box-sizing:border-box;
 	position: relative;
-    font-family: 'Rubik', sans-serif !important;
 }
 
 *::-moz-selection { /* Code for Firefox */
@@ -14,13 +11,13 @@
   background: #00A3CC !important;
 }
 
-body {
+.app {
 	padding: 0px !important;
 	margin: 0px !important;
 	overflow-x:hidden;
 	background-color:#e3e3e3;
 	color:#262626;
-
+	font-family: 'Rubik', sans-serif;
 }
 
 a {
@@ -64,7 +61,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 .index {
 	width:100vw;
 	height:100vh;
-	background-image:url(../img/index.png);
+	background-image:url(img/index.png);
 	background-size:cover;
 	background-position:center;
 	display:flex;
@@ -81,7 +78,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 	cursor:pointer;
 }
 
-.index header {
+.index article {
 	text-align:center;
 }
 
@@ -116,7 +113,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 	width:100vw;
 	height:100vh;
 	padding:10vh 10vw;
-	background-image:url(../img/index.png);
+	background-image:url(img/index.png);
 	background-size:cover;
 	background-position:center;	
 	display:block;
